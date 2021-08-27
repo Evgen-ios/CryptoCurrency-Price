@@ -20,10 +20,10 @@
                                 <rect key="frame" x="20" y="108" width="374" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MealCell" textLabel="rh7-nz-zWp" detailTextLabel="pWf-Aj-c6p" style="IBUITableViewCellStyleSubtitle" id="yRP-Zo-Lij">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MealCell" textLabel="rh7-nz-zWp" detailTextLabel="pWf-Aj-c6p" imageView="jph-yC-REJ" style="IBUITableViewCellStyleSubtitle" id="yRP-Zo-Lij">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yRP-Zo-Lij" id="4dY-KN-uev">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yRP-Zo-Lij" id="4dY-KN-uev">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -41,6 +41,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="jph-yC-REJ">
+                                                    <rect key="frame" x="20" y="0.0" width="43.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -61,6 +65,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rf5-ta-dI2"/>
                     <connections>
+                        <outlet property="navigationView" destination="rf5-ta-dI2" id="QD6-VI-K59"/>
                         <outlet property="tableView" destination="V7n-cd-IXq" id="3on-yp-kV7"/>
                     </connections>
                 </viewController>
@@ -76,11 +81,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axU-VO-S0k">
+                            <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axU-VO-S0k">
                                 <rect key="frame" x="20" y="88" width="374" height="754"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uUQ-d2-TzO">
-                                        <rect key="frame" x="0.0" y="173" width="374" height="788"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uUQ-d2-TzO">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="813"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-u3-kNX">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
@@ -94,30 +99,30 @@
                                                     <constraint firstAttribute="width" secondItem="0Nq-J6-ELO" secondAttribute="height" id="EQO-1x-M6u"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-r8-B3w">
-                                                <rect key="frame" x="0.0" y="412" width="374" height="124.5"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-r8-B3w">
+                                                <rect key="frame" x="0.0" y="412" width="374" height="249.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-ts-dIm">
-                                                <rect key="frame" x="0.0" y="537.5" width="374" height="125"/>
+                                                <rect key="frame" x="0.0" y="662.5" width="374" height="74.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimeStamp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cju-Oz-eTs">
-                                                <rect key="frame" x="0.0" y="663.5" width="374" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="738" width="374" height="75"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="xQ1-ts-dIm" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/3" id="OlW-gm-2Rn"/>
-                                            <constraint firstItem="Cju-Oz-eTs" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/3" id="kSK-ws-SZf"/>
-                                            <constraint firstItem="Di6-r8-B3w" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/3" id="wUI-ET-nlT"/>
+                                            <constraint firstItem="xQ1-ts-dIm" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/5" id="OlW-gm-2Rn"/>
+                                            <constraint firstItem="Cju-Oz-eTs" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/5" id="kSK-ws-SZf"/>
+                                            <constraint firstItem="Di6-r8-B3w" firstAttribute="height" secondItem="0Nq-J6-ELO" secondAttribute="height" multiplier="1/1.5" id="wUI-ET-nlT"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
