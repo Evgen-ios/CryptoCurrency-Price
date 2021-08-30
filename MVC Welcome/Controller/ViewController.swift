@@ -24,13 +24,14 @@ class ViewController: UIViewController {
         // Add UINavigationItem title
         navigationView.title = "Crypto coins"
         navigationView.backButtonTitle = "Back"
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "MealSegue" else { return }
         guard let selectedPath = tableView.indexPathForSelectedRow else { return }
-        let destination = segue.destination as! MealViewController
-        destination.meal = coins[selectedPath.row]
+        let destination = segue.destination as! CoinViewController
+        destination.coin = coins[selectedPath.row]
     }
 
 
