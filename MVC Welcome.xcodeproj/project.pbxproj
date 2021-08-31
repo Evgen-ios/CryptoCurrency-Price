@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A01E2EF26DBDCEC00540000 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01E2EE26DBDCEC00540000 /* PriceModel.swift */; };
+		7A7A121726DE335C00792050 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7A121426DE335C00792050 /* 2.png */; };
+		7A7A121826DE335C00792050 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7A121526DE335C00792050 /* 3.png */; };
+		7A7A121926DE335C00792050 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7A121626DE335C00792050 /* 1.png */; };
 		7AA6CDDC26CCAA2F00F00DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDDB26CCAA2F00F00DE5 /* AppDelegate.swift */; };
 		7AA6CDDE26CCAA2F00F00DE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDDD26CCAA2F00F00DE5 /* SceneDelegate.swift */; };
 		7AA6CDE026CCAA2F00F00DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDDF26CCAA2F00F00DE5 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		7A01E2EE26DBDCEC00540000 /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		7A7A121426DE335C00792050 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7A7A121526DE335C00792050 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7A7A121626DE335C00792050 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		7AA6CDD826CCAA2F00F00DE5 /* MVC Welcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Welcome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA6CDDB26CCAA2F00F00DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA6CDDD26CCAA2F00F00DE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A7A121326DE31C800792050 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7A7A121626DE335C00792050 /* 1.png */,
+				7A7A121426DE335C00792050 /* 2.png */,
+				7A7A121526DE335C00792050 /* 3.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		7AA6CDCF26CCAA2F00F00DE5 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +78,7 @@
 		7AA6CDDA26CCAA2F00F00DE5 /* MVC Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				7A7A121326DE31C800792050 /* Screenshots */,
 				7AA6CDF226CCACAD00F00DE5 /* Model */,
 				7AA6CDF126CCAC3300F00DE5 /* Supporting Files */,
 				7AA6CDEF26CCAA6B00F00DE5 /* Controller */,
@@ -166,8 +183,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7A121826DE335C00792050 /* 3.png in Resources */,
 				7AA6CDE826CCAA3100F00DE5 /* LaunchScreen.storyboard in Resources */,
 				7AA6CDE526CCAA3100F00DE5 /* Assets.xcassets in Resources */,
+				7A7A121926DE335C00792050 /* 1.png in Resources */,
+				7A7A121726DE335C00792050 /* 2.png in Resources */,
 				7AA6CDE326CCAA2F00F00DE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +356,7 @@
 				DEVELOPMENT_TEAM = W4C8NP3WVQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVC Welcome/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CryptoCurrency price";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +367,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.homework.mda.MVC-Welcome";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homework.mda.cryptocurrency.price;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,6 +385,7 @@
 				DEVELOPMENT_TEAM = W4C8NP3WVQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVC Welcome/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CryptoCurrency price";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -374,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.homework.mda.MVC-Welcome";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homework.mda.cryptocurrency.price;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         tableView.dataSource = self
         // Add UINavigationItem title
         navigationView.title = "Crypto coins"
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
         guard let selectedPath = tableView.indexPathForSelectedRow else { return }
         let destination = segue.destination as! CoinViewController
         destination.coin = coins[selectedPath.row]
+        
     }
 
 

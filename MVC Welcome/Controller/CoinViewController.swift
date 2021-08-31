@@ -38,14 +38,13 @@ class CoinViewController: UIViewController {
         coinNotes.sizeToFit()
         coinRating.text = coin.stars
         coinInfoLabel.text = "Цена \(coin.name) (\(coin.symbol.replacingOccurrences(of: "USDT", with: "")))"
-        coinPrice.text = "\(coin.name) = \(getPriceCoin(symbol: coin.symbol)) $"
+        coinPrice.text = "$ \(getPriceCoin(symbol: coin.symbol))"
     }
     
 
-    
     //MARK: - IBActions
     @IBAction func updatePrace(_ sender: UIButton) {
-        coinPrice.text = "\(coin.name) = \(getPriceCoin(symbol: coin.symbol)) $"
+        coinPrice.text = "$ \(getPriceCoin(symbol: coin.symbol))"
     }
     
 }
