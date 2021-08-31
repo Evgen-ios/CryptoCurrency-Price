@@ -20,8 +20,8 @@ struct Price: Codable {
 /// - Returns: String round 0.00
 func getPriceCoin(symbol: String) -> String {
     let decoder = JSONDecoder()
-     
-     // Get Json from Binance API
+    
+    // Get Json from Binance API
     let urlString = "https://api.binance.com/api/v3/ticker/price?symbol=\(symbol)"
     // Try to convert string to URL
     if let url = URL(string: urlString) {
@@ -31,7 +31,7 @@ func getPriceCoin(symbol: String) -> String {
             if let product = try? decoder.decode(Price.self, from: data) {
                 // Converted String to Double, because when string cut to dot getting 0.000
                 let price: Double = Double(product.price)!
-                print(String(format: "%.02f", price))
+                print(#line, #function, String(format: "%.02f", price))
                 return (String(format: "%.02f", price))
             } else {
                 print("error")

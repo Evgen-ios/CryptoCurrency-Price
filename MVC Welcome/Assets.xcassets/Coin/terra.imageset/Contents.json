@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "tether.png",
+      "filename" : "terra.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "tether@2x.png",
+      "filename" : "terra@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "tether@3x.png",
+      "filename" : "terra@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

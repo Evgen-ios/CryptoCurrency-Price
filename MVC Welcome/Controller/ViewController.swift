@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var navigationView: UINavigationItem!
     
-    // MARK: Private Properties
-    private var coins = Coin.all
+    // MARK: - Properties
+     var coins = Coin.all
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -52,7 +52,6 @@ extension ViewController: UITableViewDataSource {
         cell.imageView?.image = meal.photo
         cell.textLabel?.text = meal.name    
         return cell
-        
         
     }
     
