@@ -1,6 +1,6 @@
 # CryptoCurrency Price
 ### A simple app where I practiced with MVC and UIScrollView
-##### Used Xcode 13.0 beta 5 and Swift
+##### Used Xcode Version 13.0 beta 5 (13A5212g) and Swift
 ##### For icon used Adobe Photoshop 2020
 
 ## Icon
