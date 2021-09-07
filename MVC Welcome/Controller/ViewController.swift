@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var navigationView: UINavigationItem!
     
     // MARK: - Properties
-     var coins = Coin.all
+     var coins = CoinModel.all
 
     // MARK: - Lifecycle
     override func viewDidLoad() {

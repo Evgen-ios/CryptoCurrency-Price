@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Price: Codable {
+struct PriceModel: Codable {
     var symbol: String
     var price: String
 }
@@ -28,7 +28,7 @@ func getPriceCoin(symbol: String) -> String {
         // Try to get data drom answer
         if let data = try? Data(contentsOf: url) {
             // Try to decode answer from get
-            if let product = try? decoder.decode(Price.self, from: data) {
+            if let product = try? decoder.decode(PriceModel.self, from: data) {
                 // Converted String to Double, because when string cut to dot getting 0.000
                 let price: Double = Double(product.price)!
                 print(#line, #function, String(format: "%.02f", price))

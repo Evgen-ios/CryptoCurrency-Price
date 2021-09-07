@@ -17,7 +17,7 @@
 		7AA6CDE326CCAA2F00F00DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA6CDE126CCAA2F00F00DE5 /* Main.storyboard */; };
 		7AA6CDE526CCAA3100F00DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA6CDE426CCAA3100F00DE5 /* Assets.xcassets */; };
 		7AA6CDE826CCAA3100F00DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA6CDE626CCAA3100F00DE5 /* LaunchScreen.storyboard */; };
-		7AA6CDF626CCACEB00F00DE5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDF526CCACEB00F00DE5 /* Model.swift */; };
+		7AA6CDF626CCACEB00F00DE5 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDF526CCACEB00F00DE5 /* CoinModel.swift */; };
 		7AA6CDF826CCEA9200F00DE5 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6CDF726CCEA9200F00DE5 /* CoinViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		7AA6CDE426CCAA3100F00DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA6CDE726CCAA3100F00DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA6CDE926CCAA3100F00DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AA6CDF526CCACEB00F00DE5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7AA6CDF526CCACEB00F00DE5 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		7AA6CDF726CCEA9200F00DE5 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,7 @@
 		7AA6CDF226CCACAD00F00DE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7AA6CDF526CCACEB00F00DE5 /* Model.swift */,
+				7AA6CDF526CCACEB00F00DE5 /* CoinModel.swift */,
 				7A01E2EE26DBDCEC00540000 /* PriceModel.swift */,
 			);
 			name = Model;
@@ -203,7 +203,7 @@
 				7AA6CDF826CCEA9200F00DE5 /* CoinViewController.swift in Sources */,
 				7AA6CDDC26CCAA2F00F00DE5 /* AppDelegate.swift in Sources */,
 				7AA6CDDE26CCAA2F00F00DE5 /* SceneDelegate.swift in Sources */,
-				7AA6CDF626CCACEB00F00DE5 /* Model.swift in Sources */,
+				7AA6CDF626CCACEB00F00DE5 /* CoinModel.swift in Sources */,
 				7A01E2EF26DBDCEC00540000 /* PriceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

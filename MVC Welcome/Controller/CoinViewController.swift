@@ -10,7 +10,7 @@ import UIKit
 class CoinViewController: UIViewController {
     
     // MARK: - Properties
-    var coin: Coin!
+    var coin: CoinModel!
     
     // MARK: - IBOutlets
     @IBOutlet weak var coinName: UILabel!
